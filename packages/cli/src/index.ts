@@ -76,6 +76,26 @@ export const components = [
   'ToggleGroup',
   'Tooltip',
   'Typography',
+  // Blocks
+  'AppSidebar',
+  'CartDrawer',
+  'CategoryBanner',
+  'Dashboard',
+  'HeroParallax',
+  'HeroSlideshow',
+  'HeroSplitView',
+  'LoginCentered',
+  'LoginFullBleed',
+  'LoginSplitScreen',
+  'Newsletter',
+  'OrderConfirmation',
+  'ProductCard',
+  'ProductDetail',
+  'ProductListing',
+  'SignUpCentered',
+  'SignUpMultiStep',
+  'SignUpSplitScreen',
+  'Testimonials',
 ] as const
 
 const program = new Command()

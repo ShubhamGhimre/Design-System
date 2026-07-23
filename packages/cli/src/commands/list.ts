@@ -35,6 +35,15 @@ const categories: Record<string, string[]> = {
   Command: [
     'Command',
   ],
+  Blocks: [
+    'AppSidebar', 'CartDrawer', 'CategoryBanner', 'Dashboard',
+    'HeroParallax', 'HeroSlideshow', 'HeroSplitView',
+    'LoginCentered', 'LoginFullBleed', 'LoginSplitScreen',
+    'Newsletter', 'OrderConfirmation', 'ProductCard',
+    'ProductDetail', 'ProductListing',
+    'SignUpCentered', 'SignUpMultiStep', 'SignUpSplitScreen',
+    'Testimonials',
+  ],
 }
 
 const RADIX_COMPONENTS = new Set([

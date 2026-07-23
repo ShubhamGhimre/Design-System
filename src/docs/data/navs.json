@@ -65,5 +65,26 @@
     { "label": "Toggle Group", "href": "/component/toggle-group", "desc": "Button groups" },
     { "label": "Tooltip", "href": "/component/tooltip", "desc": "Hover hints" },
     { "label": "Typography", "href": "/component/typography", "desc": "Text variants" }
+  ]},
+  { "type": "group", "label": "Blocks", "icon": "Blocks", "children": [
+    { "label": "App Sidebar", "href": "/block/app-sidebar", "desc": "Collapsible sidebar nav" },
+    { "label": "Cart Drawer", "href": "/block/cart-drawer", "desc": "Slide-out shopping cart" },
+    { "label": "Category Banner", "href": "/block/category-banner", "desc": "Full-width category banner" },
+    { "label": "Dashboard", "href": "/block/dashboard", "desc": "Dashboard stats layout" },
+    { "label": "Hero Parallax", "href": "/block/hero-parallax", "desc": "Parallax hero section" },
+    { "label": "Hero Slideshow", "href": "/block/hero-slideshow", "desc": "Carousel hero section" },
+    { "label": "Hero Split View", "href": "/block/hero-split-view", "desc": "Split-screen hero" },
+    { "label": "Login Centered", "href": "/block/login-centered", "desc": "Centered login form" },
+    { "label": "Login Full Bleed", "href": "/block/login-full-bleed", "desc": "Full-screen login" },
+    { "label": "Login Split Screen", "href": "/block/login-split-screen", "desc": "Split-screen login" },
+    { "label": "Newsletter", "href": "/block/newsletter", "desc": "Email sign-up section" },
+    { "label": "Order Confirmation", "href": "/block/order-confirmation", "desc": "Order success page" },
+    { "label": "Product Card", "href": "/block/product-card", "desc": "Compact product card" },
+    { "label": "Product Detail", "href": "/block/product-detail", "desc": "Full product detail" },
+    { "label": "Product Listing", "href": "/block/product-listing", "desc": "Product grid layout" },
+    { "label": "Sign Up Centered", "href": "/block/sign-up-centered", "desc": "Centered sign-up form" },
+    { "label": "Sign Up Multi Step", "href": "/block/sign-up-multi-step", "desc": "Multi-step sign-up" },
+    { "label": "Sign Up Split Screen", "href": "/block/sign-up-split-screen", "desc": "Split-screen sign-up" },
+    { "label": "Testimonials", "href": "/block/testimonials", "desc": "Customer testimonials" }
   ]}
 ]

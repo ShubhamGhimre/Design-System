@@ -1,21 +1,9 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { useTheme, applyThemeVars, type ThemeName, type ThemeVars } from '../hooks/useTheme'
+import { useTheme, applyThemeVars, type ThemeVars } from '../hooks/useTheme'
+import { themes } from '../data/themes'
 import { cn } from '../../lib/utils'
 import { ColorPicker } from '../components/ColorPicker'
-
-const themes: { name: ThemeName; label: string; colors: string[] }[] = [
-  { name: 'default', label: 'Default', colors: ['#3b82f6', '#f8fafc', '#f1f5f9', '#94a3b8'] },
-  { name: 'ocean', label: 'Ocean', colors: ['#0d9488', '#ecfeff', '#ccfbf1', '#5eead4'] },
-  { name: 'forest', label: 'Forest', colors: ['#16a34a', '#f0fdf4', '#dcfce7', '#86efac'] },
-  { name: 'sunset', label: 'Sunset', colors: ['#ea580c', '#fff7ed', '#ffedd5', '#fdba74'] },
-  { name: 'rose', label: 'Rose', colors: ['#e11d48', '#fff1f2', '#ffe4e6', '#fda4af'] },
-  { name: 'violet', label: 'Violet', colors: ['#7c3aed', '#f5f3ff', '#ede9fe', '#c4b5fd'] },
-  { name: 'slate', label: 'Slate', colors: ['#475569', '#f8fafc', '#f1f5f9', '#94a3b8'] },
-  { name: 'amber', label: 'Amber', colors: ['#d97706', '#fffbeb', '#fef3c7', '#fcd34d'] },
-  { name: 'emerald', label: 'Emerald', colors: ['#059669', '#ecfdf5', '#d1fae5', '#6ee7b7'] },
-  { name: 'ruby', label: 'Ruby', colors: ['#dc2626', '#fef2f2', '#fee2e2', '#fca5a5'] },
-]
 
 const CUSTOMIZABLE_VARS = [
   { key: '--primary', label: 'Primary', default: 'oklch(0.6171 0.1375 39.0427)' },
@@ -158,7 +146,7 @@ export function ThemesPage() {
     setMode('presets')
   }
 
-  const handleSelectPreset = (name: ThemeName) => {
+  const handleSelectPreset = (name: string) => {
     setTheme(name)
     setMode('presets')
   }

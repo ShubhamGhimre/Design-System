@@ -67,6 +67,25 @@ import { TooltipPage } from '../pages/TooltipPage'
 import { TypographyPage } from '../pages/TypographyPage'
 import { ThemesPage } from '../pages/ThemesPage'
 import { NotFoundPage } from '../pages/NotFoundPage'
+import { AppSidebarPage } from '../pages/AppSidebarPage'
+import { CartDrawerPage } from '../pages/CartDrawerPage'
+import { CategoryBannerPage } from '../pages/CategoryBannerPage'
+import { DashboardPage } from '../pages/DashboardPage'
+import { HeroParallaxPage } from '../pages/HeroParallaxPage'
+import { HeroSlideshowPage } from '../pages/HeroSlideshowPage'
+import { HeroSplitViewPage } from '../pages/HeroSplitViewPage'
+import { LoginCenteredPage } from '../pages/LoginCenteredPage'
+import { LoginFullBleedPage } from '../pages/LoginFullBleedPage'
+import { LoginSplitScreenPage } from '../pages/LoginSplitScreenPage'
+import { NewsletterPage } from '../pages/NewsletterPage'
+import { OrderConfirmationPage } from '../pages/OrderConfirmationPage'
+import { ProductCardPage } from '../pages/ProductCardPage'
+import { ProductDetailPage } from '../pages/ProductDetailPage'
+import { ProductListingPage } from '../pages/ProductListingPage'
+import { SignUpCenteredPage } from '../pages/SignUpCenteredPage'
+import { SignUpMultiStepPage } from '../pages/SignUpMultiStepPage'
+import { SignUpSplitScreenPage } from '../pages/SignUpSplitScreenPage'
+import { TestimonialsPage } from '../pages/TestimonialsPage'
 
 export const router = createBrowserRouter([
   {
@@ -137,6 +156,25 @@ export const router = createBrowserRouter([
       { path: '/component/toggle-group', element: <ToggleGroupPage /> },
       { path: '/component/tooltip', element: <TooltipPage /> },
       { path: '/component/typography', element: <TypographyPage /> },
+      { path: '/block/app-sidebar', element: <AppSidebarPage /> },
+      { path: '/block/cart-drawer', element: <CartDrawerPage /> },
+      { path: '/block/category-banner', element: <CategoryBannerPage /> },
+      { path: '/block/dashboard', element: <DashboardPage /> },
+      { path: '/block/hero-parallax', element: <HeroParallaxPage /> },
+      { path: '/block/hero-slideshow', element: <HeroSlideshowPage /> },
+      { path: '/block/hero-split-view', element: <HeroSplitViewPage /> },
+      { path: '/block/login-centered', element: <LoginCenteredPage /> },
+      { path: '/block/login-full-bleed', element: <LoginFullBleedPage /> },
+      { path: '/block/login-split-screen', element: <LoginSplitScreenPage /> },
+      { path: '/block/newsletter', element: <NewsletterPage /> },
+      { path: '/block/order-confirmation', element: <OrderConfirmationPage /> },
+      { path: '/block/product-card', element: <ProductCardPage /> },
+      { path: '/block/product-detail', element: <ProductDetailPage /> },
+      { path: '/block/product-listing', element: <ProductListingPage /> },
+      { path: '/block/sign-up-centered', element: <SignUpCenteredPage /> },
+      { path: '/block/sign-up-multi-step', element: <SignUpMultiStepPage /> },
+      { path: '/block/sign-up-split-screen', element: <SignUpSplitScreenPage /> },
+      { path: '/block/testimonials', element: <TestimonialsPage /> },
       { path: '/themes', element: <ThemesPage /> },
       { path: '*', element: <NotFoundPage /> },
     ],

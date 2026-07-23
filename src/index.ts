@@ -116,5 +116,26 @@ export { Attachment } from './components/Attachment';
 export { Marker, markerVariants } from './components/Marker';
 export { Field } from './components/Field';
 
+// Blocks
+export { Newsletter } from './components/Newsletter';
+export { CategoryBanner } from './components/CategoryBanner';
+export { OrderConfirmation } from './components/OrderConfirmation';
+export { Testimonials } from './components/Testimonials';
+export { ProductCard } from './components/ProductCard';
+export { LoginCentered } from './components/LoginCentered';
+export { LoginSplitScreen } from './components/LoginSplitScreen';
+export { LoginFullBleed } from './components/LoginFullBleed';
+export { SignUpCentered } from './components/SignUpCentered';
+export { SignUpSplitScreen } from './components/SignUpSplitScreen';
+export { SignUpMultiStep } from './components/SignUpMultiStep';
+export { HeroSplitView } from './components/HeroSplitView';
+export { HeroParallax } from './components/HeroParallax';
+export { HeroSlideshow } from './components/HeroSlideshow';
+export { CartDrawer } from './components/CartDrawer';
+export { ProductDetail } from './components/ProductDetail';
+export { AppSidebar } from './components/AppSidebar';
+export { Dashboard } from './components/Dashboard';
+export { ProductListing } from './components/ProductListing';
+
 export * from './icons';
 export * from './lib/utils';
