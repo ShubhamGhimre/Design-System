@@ -1,16 +1,13 @@
-import { useState } from 'react'
 import { Menu, Sun, Moon, Palette } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { useScrollState } from '../hooks/useScrollState'
 import { useTheme } from '../hooks/useTheme'
 import { SearchDialog } from './SearchDialog'
-import { ThemeDrawer } from '../components/ThemeDrawer'
 import { cn } from '../../lib/utils'
 
 export function TopBar({ onToggleSidebar }: { onToggleSidebar: () => void }) {
   const scrolled = useScrollState()
   const { isDark, setIsDark } = useTheme()
-  const [drawerOpen, setDrawerOpen] = useState(false)
 
   return (
     <>
@@ -37,12 +34,12 @@ export function TopBar({ onToggleSidebar }: { onToggleSidebar: () => void }) {
 
         <div className="flex-1 md:hidden" />
 
-        <button onClick={() => setDrawerOpen(true)}
-          className="flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-sm font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+        <Link to="/themes"
+          className="flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-sm font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-foreground no-underline"
         >
           <Palette className="size-4" />
           <span className="hidden sm:inline">Themes</span>
-        </button>
+        </Link>
 
         <a href="https://github.com/ShubhamGhimre/Design-System"
           target="_blank" rel="noopener noreferrer"
@@ -62,7 +59,6 @@ export function TopBar({ onToggleSidebar }: { onToggleSidebar: () => void }) {
         </button>
       </header>
 
-      <ThemeDrawer open={drawerOpen} onClose={() => setDrawerOpen(false)} />
     </>
   )
 }

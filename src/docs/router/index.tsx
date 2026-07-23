@@ -65,6 +65,7 @@ import { TogglePage } from '../pages/TogglePage'
 import { ToggleGroupPage } from '../pages/ToggleGroupPage'
 import { TooltipPage } from '../pages/TooltipPage'
 import { TypographyPage } from '../pages/TypographyPage'
+import { ThemesPage } from '../pages/ThemesPage'
 import { NotFoundPage } from '../pages/NotFoundPage'
 
 export const router = createBrowserRouter([
@@ -136,6 +137,7 @@ export const router = createBrowserRouter([
       { path: '/component/toggle-group', element: <ToggleGroupPage /> },
       { path: '/component/tooltip', element: <TooltipPage /> },
       { path: '/component/typography', element: <TypographyPage /> },
+      { path: '/themes', element: <ThemesPage /> },
       { path: '*', element: <NotFoundPage /> },
     ],
   },
